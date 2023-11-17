@@ -1,0 +1,571 @@
+h1,h2,h3,h4,h5,h6,p{margin-top: 0;margin-bottom: 0;}
+ul,ol{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+img{display: block;}
+
+body{font-family: 'Roboto', sans-serif; color: #434455;background-color: #ffffff;}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.container {
+    max-width: 1158px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.list{list-style-type: none;}
+.link{text-decoration: none;}
+button{cursor: pointer;}
+
+/* Styles header */
+.main-header {box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+    border-bottom: 1px solid #E7E9FC;
+}
+.main-header>.container{display: flex;justify-content: space-between;}
+ 
+ .main-nav{display: flex;
+align-items: center;} 
+ .menu{display: flex; 
+ gap:40px;} 
+.menu-link:focus, .menu-link:hover{color:#404bbf;
+ }
+ .menu-link-main::after{
+    bottom: -1px;
+    position: absolute;
+    display: block;
+    width: 48px;
+    height: 4px;
+    border-radius: 2px;
+    content: "";
+    background:#404BBF;
+}
+    .menu-link-studio:active{color:#404bbf;}
+        .menu-link{color: #2E2F42;
+            font-family: Roboto, sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 1.5;
+            letter-spacing: 0.02em;
+        padding: 24px 0;
+    }
+        .menu-link-main {
+            position: relative;
+            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            color: #404bbf;
+        }
+        .adress-header-link:hover, .adress-header-link:focus{color:#404bbf; }
+.logo{color: #4D5AE5;
+    font-family: 'Raleway',sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-right: 76px;}
+    .logo>span{color: #2E2F42;
+        font-family: 'Raleway', sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.16;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;}
+        .menu{color: #2E2F42;
+            font-family: 'Roboto',sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 1.5;
+            letter-spacing: 0.02em;}
+            .adress-header-list{
+                display: flex;
+                gap:40px;
+                color: #434455;
+                font-family: 'Roboto',sans-serif;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 1.5;
+                letter-spacing: 0.02em;}
+                .adress-header{
+                    font-style: normal;}
+                .adress-header-item{padding: 24px 0;}
+                .adress-header-link {color: #434455;
+                transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);} 
+                /* Hero */
+                .hero{
+                    background: #2E2F42;
+                    background-repeat: no-repeat;
+                    max-width: 1440px;
+                padding: 188px 0;
+            background-image:linear-gradient(rgba(46, 47, 66, 0.70),rgba(46, 47, 66, 0.70)), url(../images/hero/hero-img.jpg);
+        background-size: cover;
+background-position: center;
+margin: 0 auto;}
+                .hero-title{color: #ffffff;
+                    text-align: center;
+                    font-family: 'Roboto',sans-serif;
+                    font-size: 56px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 1.07;
+                    letter-spacing: 0.02em;
+                max-width: 496px;
+            margin-left: auto;
+        margin-right: auto;
+    margin-bottom: 48px;}
+.hero-button{color: #ffffff;
+    display: block;
+    margin: 0 auto;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
+    font-family: Roboto,sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    background: #4D5AE5;
+padding: 16px 32px;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+    .hero-button:hover, .hero-button:focus{color: #FFFfff;
+        font-family: Roboto, sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.04em;
+    background-color: #404bbf;}
+    /* Our benefits */
+    .benefits{padding: 120px 0;}
+    .benefits-icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 112px;
+        background-color: #f4f4fd;
+        border-radius: 4px;
+        margin-bottom: 8px;
+}
+    .benefits-direct{color: #2E2F42;
+        font-family: Roboto,sans-serif;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        margin-bottom: 8px;}
+        .ben-text{color: #434455;
+            font-family: Roboto, sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            letter-spacing: 0.02em;
+        width: 264px;}
+        .benefits-list{display: flex;
+        justify-content: space-between;
+    gap: 24px;}
+        .benefits-item{width: calc((100% - 72px) / 4);}
+            /* Our team */
+            .team-list{display: flex;
+            gap: 24px;}
+            .team{background: #F4F4FD;
+            padding: 120px 0;}
+            .team-title{color: #2E2F42;
+                text-align: center;
+                font-family: Roboto, sans-serif;
+                font-size: 36px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 1.11;
+                letter-spacing: 0.02em;
+                text-transform: capitalize;
+            margin-bottom: 72px;}
+                .team-name{color: #2E2F42;
+                    text-align: center;
+                    font-family: Roboto, sans-serif;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 1.2;
+                    letter-spacing: 0.02em;
+                margin-bottom: 8px;}
+                    .team-pos{color: #434455;
+                        text-align: center;
+                        font-family: Roboto, sans-serif;
+                        font-size: 16px;
+                        line-height: 1.5;
+                        letter-spacing: 0.02em;
+                    }
+                    .social-list{display: flex;
+                    gap:24px;
+                justify-content: center;
+            margin-top: 8px;}
+                .social-list-link{display: flex;
+                    align-items: center; justify-content: center;
+                line-height: 0;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background: #4d5ae5;
+            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+            .social-list-item{transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+                .social-list-link:hover, 
+                .social-list-link:focus{background-color: #31d0aa;} 
+                    .social-list-icon{fill:#F4F4FD;
+                }
+                .social-list-link-team:hover, .social-list-link-team:focus {background-color: #404bbf;}
+                        .team-item{background-color: #ffffff;
+                        width: calc((100%-3*24px)/4);
+                border-radius: 0px 0px 4px 4px;
+            box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+                0px 1px 1px rgba(46, 47, 66, 0.16),
+                0px 2px 1px rgba(46, 47, 66, 0.08);}
+                    .team-nampos{padding:32px 0}
+                        /* Our Portfolio */
+                        .portfolio{padding-top: 120px;
+                        padding-bottom: 120px;}
+                        .port-list{display: flex;
+                        column-gap: 24px;
+                    row-gap: 48px;
+                flex-wrap: wrap;}
+                        .port-title{color: #2E2F42;
+                            text-align: center;
+                            font-family: Roboto, sans-serif;
+                            font-size: 36px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 1.11;
+                            letter-spacing: 0.02em;
+                            text-transform: capitalize;
+                        margin-bottom: 72px;}
+                            .port-name{color: #2E2F42;
+                                font-family: Roboto, sans-serif;
+                                font-size: 20px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: 1.2;
+                                letter-spacing: 0.02em;
+                            margin-bottom: 8px;}
+                                .port-text{color: #434455;
+                                    font-family: Roboto, sans-serif;
+                                    font-size: 16px;
+                                    line-height: 1.5;
+                                    letter-spacing: 0.02em;
+                               }
+                               .overlay-wraper{position: relative;
+                                overflow: hidden;
+                            }
+                                .overlay-text{
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    color: #F4F4FD;
+                                    font-family: Roboto;
+                                    font-size: 16px;
+                                    font-weight: 400;
+                                    line-height: 1.5;
+                                    letter-spacing: 0.02em;
+                                    background: #4D5AE5;
+                                width: 100%;
+                            height: 100%;
+                        padding: 40px 32px;
+        transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+                                    .port-item{
+                            width: calc((100% - 48px) / 3);
+                        position: relative;
+                    overflow:hidden;}
+                            .port-category{padding: 32px 16px;
+                            border: 1px solid #e7e9fc;
+                        border-top: none;}
+                        .port-item{transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);}
+                        .port-item:hover .overlay-text{transform: translateY(0%);
+                        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);}
+                                    /* Page Footer */
+                                    .foot-contact{background: #2E2F42;
+                                    padding: 100px 0;
+                                }
+                                    .foot-text{color: #F4F4FD;
+                                        font-family: Roboto, sans-serif;
+                                        font-size: 16px;
+                                        line-height: 1.5;
+                                        letter-spacing: 0.02em;
+                                        width: 264px;
+                                        }
+                                        .logo-foot{color: #4D5AE5;
+                                            font-family: Raleway, sans-serif;
+                                            font-size: 18px;
+                                            font-style: normal;
+                                            font-weight: 700;
+                                            line-height: 1.17;
+                                            letter-spacing: 0.03em;
+                                            text-transform: uppercase;
+                                        display: inline-block;
+                                    margin-bottom: 16px;}
+                                            .logo-foot>span{color:#F4F4FD;
+                                                font-family: Raleway, sans-serif;
+                                                font-size: 18px;
+                                                font-style: normal;
+                                                font-weight: 700;
+                                                line-height: 1.17;
+                                                letter-spacing: 0.03em;
+                                                text-transform: uppercase;}
+                                                .social-title{color: #FFFfff;
+                                                    font-family: Roboto;
+                                                    font-size: 16px;
+                                                    font-style: normal;
+                                                    font-weight: 500;
+                                                    line-height: 1.5;
+                                                    letter-spacing: 0.02em;
+                                                margin-bottom: 16px;}
+                                                 .social-list-footer{gap: 16px; 
+                                                    
+                                                 } 
+                                                .footer-container{display: flex;
+                                                    align-items: baseline;
+                                                }
+                                                .logo-footer{margin-right: 120px;}
+                                                                                                .footer-subscribe-form-text {
+                                                                                                    display: block;
+                                                                                                    color: #ffffff;
+                                                                                                    font-size: 16px;
+                                                                                                    margin-bottom: 16px;
+                                                                                                    font-weight: 500;
+                                                                                                    line-height: 1.5;
+                                                                                                    letter-spacing: 0.02em;
+                                                                                                }
+                                                
+                                                                                                .footer-subscribe-form-field {
+                                                                                                    border-radius: 4px;
+                                                                                                    width: 264px;
+                                                                                                    height: 40px;
+                                                                                                    background-color: transparent;
+                                                                                                    border: 1px solid #FFFfff;
+                                                                                                    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+                                                                                                    
+                                                                                                    color: #ffffff;
+                                                                                                    font-size: 12px;
+                                                                                                    padding-left: 16px;
+                                                                                                    font-weight: 400;
+                                                                                                    line-height: 1.5;
+                                                                                                    letter-spacing: 0.04em;
+                                                                                                }
+                                                
+                                                                                                .footer-subscribe-form-field::placeholder {
+                                                                                                    color: #ffffff;
+                                                                                                }
+                                                
+                                                                                                .footer-subscribe-form {
+                                                                                                    display: flex;
+                                                                                                    gap: 24px;
+                                                                                                }
+                                                
+                                                                                                .subscribe-btn {
+                                                                                                    color: #ffffff;
+                                                                                                    text-align: center;
+                                                                                                    padding: 8px 24px;
+                                                                                                    font-family: "Roboto", sans-serif;
+                                                                                                    font-size: 16px;
+                                                                                                    border: none;
+                                                                                                    font-weight: 500;
+                                                                                                    line-height: 1.5;
+                                                                                                    border-radius: 4px;
+                                                                                                    cursor: pointer;
+                                                                                                    background-color: #4D5AE5;
+                                                                                                    letter-spacing: 0.04em;
+                                                                                                    display: flex;
+                                                                                                    min-width: 165px;
+                                                                                                    height: 40px;
+                                                                                                    
+                                                                                                    justify-content: center;
+                                                                                                    align-items: center;
+                                                                                                    gap: 16px;
+                                                                                                }
+                                                
+                                                                                                .footer-sbcr-btn {
+                                                                                                    position: relative;
+                                                                                                    ;
+                                                                                                }
+                                                
+                                                                                                .footer-subscr-btn-icon {
+                                                                                                    margin-left: 16px;
+                                                                                                }
+                                                
+                                                                                                .footer-subscribe-form-block {
+                                                                                                    margin-left:auto;
+                                                                                                }
+                                                /* BACKDROP STYLES */
+                                                .backdrop{position: fixed;
+                                                top:0;
+                                            left:0;
+                                            z-index: 99999999;
+                                        width: 100%;
+                                    height: 100%;
+                                background-color:rgba(46, 47, 66, 0.40);
+                            opacity: 0;
+                        visibility: hidden;
+                    pointer-events: none;
+                transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+                    .backdrop.is-open{opacity: 1;
+                    visibility: visible;
+                pointer-events: auto;}
+                                /* MODAL WINDOW STYLES */
+                    .modal{
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%,-50%);
+                        width: 408px;
+                        min-height: 584px;
+                        border-radius: 4px;
+                        background-color: #FCFCFC;
+                        padding: 72px 24px 24px 24px;
+                        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+                    }
+                    .modal-close-btn{
+                        width: 24px;
+                        height: 24px;
+                        display: flex;
+                        border-radius: 50%;
+                        background-color: transparent;
+                        padding: 0px;
+                        line-height: 0;
+                        position: absolute;
+                        top: 24px;
+                        right: 24px;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: #e7e9fc;
+                        border: 1px solid rgba(0, 0, 0, 0.1);
+                        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                    }
+                    .modal-close-btn-icon{transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+                                    .modal-close-btn:hover, .modal-close-btn:focus{fill: #ffffff; background-color: #404BBF; border: none;}
+                                    .rewiew-form-description{color: #2E2F42;
+                                        text-align: center;
+                                        font-family: Roboto;
+                                        font-size: 16px;
+                                        font-weight: 500;
+                                        line-height: 1.5;
+                                        letter-spacing: 0.02em;
+                                margin-bottom: 16px;}
+                                /* REWIEW FORM STYLES */
+                                .rewiew-form-field-label{display: block;
+                                color: #8E8F99;
+                                    font-size: 12px;
+                                    font-weight: 400;
+                                    line-height: 1.17;
+                                    letter-spacing: 0.04em;
+                                margin-bottom: 4px;}
+                                .rewiew-form-field{width: 100%;
+                                height: 40px;
+                                padding-left: 38px;
+                                border-radius: 4px;
+                                border: 1px solid rgba(46, 47, 66, 0.40);
+                                outline: transparent;
+                                background-color: transparent;
+                                transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+                            .rewiew-form-field:focus{border: 1px solid #4D5AE5;
+                            outline-color: transparent;
+                        outline-offset: 4px;
+                    transition: fill 250ms linear;}
+                            .rewiew-form-field:focus + .rewiew-form-field-icon{fill:#4d5ae5 ;}
+                            .rewiew-form-field-wrapper{margin-bottom: 8px;}
+                            .rewiew-form-field-wrapper-message{margin-bottom: 16px;}
+                            .rewiew-form-input-wrapper{position: relative;}
+                            .rewiew-form-field-icon{fill: #2E2F42;
+                               position: absolute;
+                               top: 50%;
+                               transform: translateY(-50%);
+                               left: 16px;
+                               transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+                            .rewiew-form-message{
+                               width: 100%;
+                               height: 120px;
+                               border-radius: 4px;
+                               border: 1px solid rgba(46, 47, 66, 0.40);
+                               resize: none;
+                               padding: 8px 16px;
+                               outline: transparent;
+                               color: rgba(46, 47, 66, 0.40);
+                               font-size: 12px;
+                               font-weight: 400;
+                               line-height: 1.17;
+                               letter-spacing: 0.04em;
+                               background-color: transparent;
+                               transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                            }
+                            .rewiew-form-message::placeholder{color: rgba(46, 47, 66, 0.40);}
+                            .rewiew-form-message:focus{border: 1px solid #4D5AE5;
+                                outline-color: transparent;
+                                outline-offset: 4px;
+                                transition: fill 250ms linear;}
+                            .rewiew-form-checkbox-wrapper{margin-bottom: 24px;}
+                            .rewiew-form-own-checkbox{display: inline-flex;
+                                justify-content: center;
+                                align-items: center;
+                                cursor: pointer;
+                                fill: transparent;
+                                width: 16px;
+                                height: 16px;
+                                margin-right: 8px;
+                                border: 1px solid rgba(46, 47, 66, 0.4);
+                                border-radius: 2px;
+                                transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+                            .privacy-policy-link{color: #4D5AE5;
+                                font-size: 12px;
+                                font-weight: 400;
+                                line-height: 1.33;
+                                letter-spacing: 0.04em;
+                                text-decoration-line: underline;
+                            }
+                        .rewiew-form-checkbox-label{
+                                                                color: #8E8F99;
+                                                                font-size: 12px;
+                                                                font-weight: 400;
+                                                                line-height: 1.17;
+                                                                letter-spacing: 0.04em;}
+                                                                .rewiew-form-checkbox:checked+.rewiew-form-checkbox-label .rewiew-form-own-checkbox{background-color: #404BBF;border: none; fill: #f4f4fd;}
+                                                                .rewieew-form-btn {
+                                                                                                                                    color: #ffffff;
+                                                                                                                                    display: block;
+                                                                                                                                    margin: 0 auto;
+                                                                                                                                    min-width: 169px;
+                                                                                                                                    height: 56px;
+                                                                                                                                    border: none;
+                                                                                                                                    border-radius: 4px;
+                                                                                                                                    font-family: Roboto, sans-serif;
+                                                                                                                                    font-size: 16px;
+                                                                                                                                    font-style: normal;
+                                                                                                                                    font-weight: 500;
+                                                                                                                                    line-height: 1.5;
+                                                                                                                                    letter-spacing: 0.04em;
+                                                                                                                                    background: #4D5AE5;
+                                                                                                                                    padding: 16px 32px;
+                                                                                                                                    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                                                                                                                                }
+                                                                                                                                .rewiew-form-checkbox:focus+.rewiew-form-checkbox-label .rewiew-form-own-checkbox {
+                                                                                                                                    outline: 2px solid rgba(0,0,255,0.5);
+                                                                                                                                }
+                                                                                                                                                                                                                                                                
+                                                                                                                                
