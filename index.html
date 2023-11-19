@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WEBSTUDIO</title>
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -131,17 +131,16 @@
         </div>
       </section>
       <!-- OUR TEAM -->
-      <!-- <section class="team section">
+      <section class="team section">
         <div class="container">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list list">
             <li class="team-item">
               <img
                 class="team-img"
-                src="./images/our-team/mark.jpg"
+                srcset="./images/retinna/Team/Guerro-mobile@2x.jpg 2x"
+                src="./images/retinna/Team/Guerro-mobile.jpg"
                 alt="Mark Guerrero Product Designer"
-                width="264"
-                height="260"
               />
               <div class="team-nampos">
                 <h3 class="team-name">Mark Guerrero</h3>
@@ -201,10 +200,9 @@
             <li class="team-item">
               <img
                 class="team-img"
-                src="./images/our-team/tom.jpg"
+                srcset="./images/retinna/Team/Ford-mobile@2x.jpg 2x"
+                src="./images/retinna/Team/Ford-mobile.jpg"
                 alt="Tom Ford Frontend Developer"
-                width="264"
-                height="260"
               />
               <div class="team-nampos">
                 <h3 class="team-name">Tom Ford</h3>
@@ -264,10 +262,10 @@
             <li class="team-item">
               <img
                 class="team-img"
-                src="./images/our-team/camila.jpg"
-                alt="Camila Garcia Marketing"
-                width="264"
-                height="260"
+                srcset="./images/retinna/Team/Garcia-mobile@2x.jpg 2x"
+                src="./images/retinna/Team/Garcia-mobile.jpg"
+                alt="Camila Garcia
+              Marketing"
               />
               <div class="team-nampos">
                 <h3 class="team-name">Camila Garcia</h3>
@@ -327,10 +325,9 @@
             <li class="team-item">
               <img
                 class="team-img"
-                src="./images/our-team/daniel.jpg"
+                srcset="./images/retinna/Team/Wilson-mobile@2x.jpg 2x"
+                src="./images/retinna/Team/Wilson-mobile.jpg"
                 alt="Daniel Wilson UI Designer"
-                width="264"
-                height="260"
               />
               <div class="team-nampos">
                 <h3 class="team-name">Daniel Wilson</h3>
@@ -389,9 +386,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- OUR PORTFOLIO -->
-      <!-- <section id="portfolio" class="portfolio">
+      <section id="portfolio" class="portfolio">
         <div class="container">
           <h2 class="port-title">Our Portfolio</h2>
           <ul class="port-list list">
@@ -399,10 +396,17 @@
               <div class="overlay-wraper">
                 <img
                   class="port-img"
-                  src="./images/our-portfolio/banking-app.jpg"
+                  srcset="
+                    ./images/retinna/Portfolio/banking-mobile.jpg     288w,
+                    ./images/retinna/Portfolio/banking-tablet.jpg     356w,
+                    ./images/retinna/Portfolio/banking-desktop.jpg    360w,
+                    ./images/retinna/Portfolio/banking-mobile@2x.jpg  576w,
+                    ./images/retinna/Portfolio/banking-tablet@2x.jpg  712w,
+                    ./images/retinna/Portfolio/banking-desktop@2x.jpg 720w
+                  "
+                  sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width:767px) 288px"
+                  src="./images/retinna/Portfolio/banking-mobile.jpg"
                   alt="Banking App"
-                  width="360"
-                  height="300"
                 />
                 <p class="overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -419,10 +423,17 @@
               <div class="overlay-wraper">
                 <img
                   class="port-img"
-                  src="./images/our-portfolio/cashless-payment.jpg"
+                  srcset="
+                    ./images/retinna/Portfolio/payment-mobile.jpg     288w,
+                    ./images/retinna/Portfolio/payment-tablet.jpg     356w,
+                    ./images/retinna/Portfolio/payment-desktop.jpg    360w,
+                    ./images/retinna/Portfolio/payment-mobile@2x.jpg  576w,
+                    ./images/retinna/Portfolio/payment-tablet@2x.jpg  712w,
+                    ./images/retinna/Portfolio/payment-desktop@2x.jpg 720w
+                  "
+                  sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width:767px) 288px"
+                  src="./images/retinna/Portfolio/payment-mobile.jpg"
                   alt="Cashless Payment"
-                  width="360"
-                  height="300"
                 />
                 <p class="overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -439,10 +450,17 @@
               <div class="overlay-wraper">
                 <img
                   class="port-img"
-                  src="./images/our-portfolio/meditation-app.jpg"
+                  srcset="
+                    ./images/retinna/Portfolio/meditation-mobile.jpg     288w,
+                    ./images/retinna/Portfolio/meditation-tablet.jpg     356w,
+                    ./images/retinna/Portfolio/meditation-desktop.jpg    360w,
+                    ./images/retinna/Portfolio/meditation-mobile@2x.jpg  576w,
+                    ./images/retinna/Portfolio/meditation-tablet@2x.jpg  712w,
+                    ./images/retinna/Portfolio/meditation-desktop@2x.jpg 720w
+                  "
+                  sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width:767px) 288px"
+                  src="./images/retinna/Portfolio/meditation-mobile.jpg"
                   alt="Meditation App"
-                  width="360"
-                  height="300"
                 />
                 <p class="overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -459,10 +477,17 @@
               <div class="overlay-wraper">
                 <img
                   class="port-img"
-                  src="./images/our-portfolio/taxi-service.jpg"
+                  srcset="
+                    ./images/retinna/Portfolio/taxi-mobile.jpg     288w,
+                    ./images/retinna/Portfolio/taxi-tablet.jpg     356w,
+                    ./images/retinna/Portfolio/taxi-desktop.jpg    360w,
+                    ./images/retinna/Portfolio/taxi-mobile@2x.jpg  576w,
+                    ./images/retinna/Portfolio/taxi-tablet@2x.jpg  712w,
+                    ./images/retinna/Portfolio/taxi-desktop@2x.jpg 720w
+                  "
+                  sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width:767px) 288px"
+                  src="./images/retinna/Portfolio/taxi-mobile.jpg"
                   alt="Taxi Service"
-                  width="360"
-                  height="300"
                 />
                 <p class="overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -479,10 +504,17 @@
               <div class="overlay-wraper">
                 <img
                   class="port-img"
-                  src="./images/our-portfolio/screen-illustration.jpg"
+                  srcset="
+                    ./images/retinna/Portfolio/screen-mobile.jpg     288w,
+                    ./images/retinna/Portfolio/screen-tablet.jpg     356w,
+                    ./images/retinna/Portfolio/screen-desktop.jpg    360w,
+                    ./images/retinna/Portfolio/screen-mobile@2x.jpg  576w,
+                    ./images/retinna/Portfolio/screen-tablet@2x.jpg  712w,
+                    ./images/retinna/Portfolio/screen-desktop@2x.jpg 720w
+                  "
+                  sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width:767px) 288px"
+                  src="./images/retinna/Portfolio/screen-mobile.jpg"
                   alt="Screen Illustrations"
-                  width="360"
-                  height="300"
                 />
                 <p class="overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -499,10 +531,17 @@
               <div class="overlay-wraper">
                 <img
                   class="port-img"
-                  src="./images/our-portfolio/online-courses.jpg"
+                  srcset="
+                    ./images/retinna/Portfolio/online-mobile.jpg     288w,
+                    ./images/retinna/Portfolio/online-tablet.jpg     356w,
+                    ./images/retinna/Portfolio/online-desktop.jpg    360w,
+                    ./images/retinna/Portfolio/online-mobile@2x.jpg  576w,
+                    ./images/retinna/Portfolio/online-tablet@2x.jpg  712w,
+                    ./images/retinna/Portfolio/online-desktop@2x.jpg 720w
+                  "
+                  sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width:767px) 288px"
+                  src="./images/retinna/Portfolio/online-mobile.jpg"
                   alt="Online Courses"
-                  width="360"
-                  height="300"
                 />
                 <p class="overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -517,10 +556,10 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
     <!-- PAGE FOOTER -->
-    <!-- <footer class="foot-contact">
+    <footer class="foot-contact">
       <div class="container footer-container">
         <div class="logo-footer">
           <a class="link logo-foot" href="./index.html"
@@ -605,9 +644,9 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <!-- Form -->
-    <!-- <div class="backdrop">
+    <div class="backdrop">
       <div class="modal">
         <button
           type="button"
@@ -712,7 +751,7 @@
           <button class="rewieew-form-btn" type="submit">Send</button>
         </form>
       </div>
-    </div> -->
+    </div>
     <!-- MOBILE MENU -->
     <div class="mobile-menu">
       <div class="container mobile-menu-container">
