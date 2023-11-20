@@ -66,8 +66,8 @@ button {
 }
 
 .main-header {
-    padding-top: 7px;
-    padding-bottom: 18px;
+    padding-top: 17.5px;
+    padding-bottom: 17.5px;
 }
 
 .logo {
@@ -167,6 +167,7 @@ button {
         margin-bottom: 40;
         text-transform: capitalize;
     }
+    .menu-link-mobile-li{color: #404BBF;}
 
     .menu-link-mobile:active {
         color: #404bbf;
@@ -202,6 +203,7 @@ button {
         color: #434455;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
+    .adress-mobile-link-li{color: #404BBF;}
 
     .adress-mobile-link:active {
         color: #404bbf;
@@ -328,10 +330,10 @@ button {
         gap: 12px;
         color: #434455;
         font-family: 'Roboto', sans-serif;
-        font-size: 16px;
+        font-size: 12px;
         font-style: normal;
         font-weight: 400;
-        line-height: 1.5;
+        line-height: 1.17;
         letter-spacing: 0.02em;
     }
 
@@ -358,6 +360,8 @@ button {
     .menu-link:hover {
         color: #404bbf;
     }
+    .menu-link-main::after {
+        bottom: 2px;}
 
     .menu-link-studio:active {
         color: #404bbf;
@@ -371,6 +375,8 @@ button {
     .adress-header-list {
         flex-direction: row;
         gap: 40px;
+        font-size: 16px;
+        line-height: 1.50;
     }
 }
 /* HERO MOBILE STYLES */
@@ -486,8 +492,11 @@ screen and (min-device-pixel-ratio: 2) and (min-width:1158px) {
 .benefits-icon {
     display: none;
 }
+.benefits-list{display: flex;
+    flex-direction: column;
+gap:72px}
 .benefits {
-    margin: 96px 0;
+    padding: 96px 0;
 }
 .benefits-direct {
     text-align: center;
@@ -509,9 +518,9 @@ screen and (min-device-pixel-ratio: 2) and (min-width:1158px) {
     font-weight: 500;
     letter-spacing: 0.02em;
 }
-.benefits-item {
+/* .benefits-item {
     margin-top: 72px;
-}
+} */
 /* OUR BENEFITS TABLET */
 @media screen and (min-width: 768px) {
     .benefits-direct {
@@ -519,6 +528,7 @@ screen and (min-device-pixel-ratio: 2) and (min-width:1158px) {
         }
         .benefits-list {
             display: flex;
+            flex-direction: row;
             column-gap: 24px;
             flex-wrap: wrap;
             row-gap: 72px;
@@ -526,7 +536,6 @@ screen and (min-device-pixel-ratio: 2) and (min-width:1158px) {
         .benefits-item {
             width: calc((100% - 24px) / 2);
             width: 356px;
-            height: 72px;
             margin: 0;
         }
         .benefits{margin: 0;
@@ -553,6 +562,7 @@ screen and (min-device-pixel-ratio: 2) and (min-width:1158px) {
     }
     .ben-text {
         width: 264px;
+        font-weight: 400;
     }
 
     .benefits-list {
@@ -576,7 +586,7 @@ screen and (min-device-pixel-ratio: 2) and (min-width:1158px) {
 }
 .team {
     background: #F4F4FD;
-    padding: 120px 0;
+    padding: 96px 0;
 }
 
 .team-title {
@@ -682,6 +692,10 @@ screen and (min-device-pixel-ratio: 2) and (min-width:1158px) {
     padding-top: 96px;
     padding-bottom: 96px;
 }
+.port-list {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;}
  .port-title {
      color: #2E2F42;
      text-align: center;
@@ -723,6 +737,7 @@ screen and (min-device-pixel-ratio: 2) and (min-width:1158px) {
 @media screen and (min-width: 768px) {
 .port-list {
     display: flex;
+    flex-direction: row;
     column-gap: 24px;
     row-gap: 72px;
     flex-wrap: wrap;
@@ -735,7 +750,7 @@ screen and (min-device-pixel-ratio: 2) and (min-width:1158px) {
     padding-top: 120px;
     padding-bottom: 120px;
 }
-    
+
 .port-list {
     row-gap: 48px;
 }
@@ -744,6 +759,7 @@ screen and (min-device-pixel-ratio: 2) and (min-width:1158px) {
     overflow: hidden;
     }
 .overlay-text {
+    display:block;
     position: absolute;
     top: 0;
     left: 0;
@@ -803,10 +819,10 @@ screen and (min-device-pixel-ratio: 2) and (min-width:1158px) {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    display: inline-block;
+    display: block;
     margin-bottom: 16px;
-    align-items: center; 
-    margin-left: 86px;  
+    align-items: center;
+    text-align: center; 
 
 }
 
@@ -909,6 +925,7 @@ screen and (min-device-pixel-ratio: 2) and (min-width:1158px) {
             flex-direction:row;
             flex-wrap: wrap;
             column-gap: 24px;
+            row-gap: 72px;
             margin-left: 108px;
         }
     .foot-text{width: 264px;}
@@ -917,6 +934,7 @@ screen and (min-device-pixel-ratio: 2) and (min-width:1158px) {
     .footer-subscribe-form-text{text-align: start;}
     .social-title{text-align: start;}
     .logo-foot{margin-left: 0;}
+    .logo-footer{margin-bottom: 0;}
     .footer-subscribe-form-block{margin-left: 0;}
 }
 /* FOOTER DESKTOP */
